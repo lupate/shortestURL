@@ -5,17 +5,16 @@ Execution
 java -jar short-url.jar
 
 API Details
+
 Create Short URL:
 http://localhost:8085/api/v1/shorten
 
 Request body:
-
 {
     "url": "https://www.gmail.com"
 }
 
 Response body:
-
 {
     "id": "94717296",
     "url": "https://www.gmail.com",
@@ -23,15 +22,14 @@ Response body:
 }
 
 Response codes:
-
 HTTP Status	Description
 200	successful operation
 500	internal server error
+
 Retrieve Original URL:
-http://localhost:8085/rest/url/{id}
+http://localhost:8085/api/v1/original/{id}
 
 Response body:
-
 {
     "id": "94717296",
     "url": "https://www.gmail.com",
@@ -39,7 +37,6 @@ Response body:
 }
 
 Response codes:
-
 HTTP Status	Description
 200	successful operation
 404	not found
