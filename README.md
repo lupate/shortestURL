@@ -1,6 +1,20 @@
 # shortestURL
 This project demonstrates the use of Spring Boot and Redis to build a URL shortener api. 
 
+setup Pre-requisite
+ - Java 1.8 or above
+ - IntelliJ or Eclipse IDE
+ - Docker
+
+Setup Redis using Docker
+ - docker pull redis
+ - docker image ls | grep redis
+ - docker run -d --name=redis -p 6379:6379 redis
+ - docker container ls
+
+using Redis-cli
+ - redis-cli
+
 Execution
 java -jar short-url.jar
 
